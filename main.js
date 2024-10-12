@@ -73,3 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
   });
 
+  const main = document.getElementById('main');
+  const loadingSpinner = document.getElementById('loading');
+  const loading = document.getElementById('loading2');
+
+  // When the image is successfully loaded
+  window.addEventListener("load", (event) => {
+    main.style.display = 'block';
+    loadingSpinner.style.display = 'none';
+    loading.style.display = 'none';
+    console.log("Image loaded");
+  });
